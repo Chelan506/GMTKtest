@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://85sw335enqs0"]
+
+[node name="TextEdit" type="TextEdit"]
+offset_left = 518.0
+offset_top = 299.0
+offset_right = 638.0
+offset_bottom = 378.0
+text = "Among Us"
