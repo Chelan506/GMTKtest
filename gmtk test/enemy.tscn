@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c30vjqlq0dgnl"]
+
+[ext_resource type="Texture2D" uid="uid://bcmql6qqwpmbg" path="res://Art/enemy1.png" id="1_7xlvt"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_8huh4"]
+[ext_resource type="Texture2D" uid="uid://b6tfsmqa8u1mv" path="res://Art/enemy2.png" id="2_4tldk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ar4et"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7xlvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4tldk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="PathFollow2D"]
+script = ExtResource("1_8huh4")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_ar4et")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="AnimatedSprite2D"]
+
+[connection signal="screen_exited" from="AnimatedSprite2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
