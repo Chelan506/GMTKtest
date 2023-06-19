@@ -1,0 +1,16 @@
+2a60927148abd1d33b818b535e306557
+::res://::1687185660
+enemy.gd::GDScript::-1::1687184366::0::1::::<>PathFollow2D<>::
+enemy.tscn::PackedScene::6791030420222794437::1687184366::0::1::::<><>::uid://bcmql6qqwpmbg<>res://enemy.gd<>uid://b6tfsmqa8u1mv
+EnemyPathFollow.gd::GDScript::-1::1687184366::0::1::::<>PathFollow2D<>::
+icon.svg::CompressedTexture2D::1196114952591674787::1687184366::1687184423::1::::<><>::
+Path2D.gd::GDScript::-1::1687184366::0::1::::<>Path2D<>::
+teslaCoil.tscn::PackedScene::5024154256333632113::1687185660::0::1::::<><>::uid://dkmxyyh2ynqar
+test scene.gd::GDScript::-1::1687184366::0::1::::<>TextureRect<>::
+test scene.tscn::PackedScene::2379296881289831845::1687185660::0::1::::<><>::uid://cdjnm7m7os2ay<>res://Path2D.gd<>uid://c30vjqlq0dgnl<>uid://cdt0c7ckgbau8
+::res://Art/::1687187690
+BackroundMap.png::CompressedTexture2D::5002799749277898612::1687184366::1687184423::1::::<><>::
+enemy1.png::CompressedTexture2D::2552563673332795184::1687184366::1687184423::1::::<><>::
+enemy2.png::CompressedTexture2D::4601834398095349189::1687184366::1687184423::1::::<><>::
+lightningSprite.png::CompressedTexture2D::3388478116895995436::1687187690::1687187692::1::::<><>::
+teslaCoil.png::CompressedTexture2D::7887363643029082841::1687185092::1687185096::1::::<><>::

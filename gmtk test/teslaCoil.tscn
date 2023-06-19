@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://cdt0c7ckgbau8"]
+
+[ext_resource type="Texture2D" uid="uid://dkmxyyh2ynqar" path="res://Art/teslaCoil.png" id="1_4kunk"]
+[ext_resource type="Texture2D" uid="uid://bojn0e5gpdg7m" path="res://Art/lightningSprite.png" id="2_hmwmv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86vtj"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(0, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jy32"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(128, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgicq"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(256, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4nnj"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(384, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stgg4"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(512, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vegg4"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(640, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmpct"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(768, 0, 128, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5jbo"]
+atlas = ExtResource("2_hmwmv")
+region = Rect2(896, 0, 128, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_io7wl"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86vtj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jy32")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgicq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4nnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stgg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vegg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmpct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5jbo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(-1.01328e-06, 3.5584e-05)
+scale = Vector2(0.0460606, 0.0460606)
+texture = ExtResource("1_4kunk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1824.25, 7297)
+scale = Vector2(29.5039, 29.5039)
+sprite_frames = SubResource("SpriteFrames_io7wl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D"]
+root_node = NodePath("")
