@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://3pgvyc6wbmo1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jilue"]
+
+[node name="HexArea" type="Area2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jilue")

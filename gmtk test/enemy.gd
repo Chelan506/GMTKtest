@@ -20,5 +20,5 @@ func take_damage(damage):
 
 #delete enemy when it leaves screen
 func _on_visible_on_screen_notifier_2d_screen_exited():
-	#TODO player should take "damage" when enemy ges through
+	#TODO player should take "damage" when enemy gets through
 	queue_free()
